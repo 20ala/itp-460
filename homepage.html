@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TravelFly Home </title> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <style>   
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #nav {
+            position: fixed; 
+            background-color: lightgrey; 
+            margin-left: auto; 
+            margin-right: auto;
+            height: 75px; 
+            top: 0px; 
+            left: 0px; 
+            right: 0px; 
+            z-index: 1; 
+        }
+
+        #home {
+            width: 300px; 
+            margin-left: 20px; 
+            padding: 10px;
+            text-align: left; 
+            font-size: 30px; 
+            text-decoration: none; 
+            position: relative; 
+            top: 20px; 
+            color: black; 
+        }
+
+        #home:hover {
+            color: white; 
+        }
+
+        #option {
+            width: 300px; 
+            margin: 0px; 
+        }
+    
+        #option li {
+            width: 80px; 
+            margin: 10px; 
+        }
+
+        #flight_opt {
+            padding-left: 10px; 
+            padding-right: 25px; 
+        }
+
+        #option a {
+            color: black; 
+            text-decoration: none; 
+            font-size: 20px; 
+        }
+
+        #option ul {
+            display: flex; 
+            list-style: none; 
+            position: absolute; 
+            right: 50px;
+            bottom: 0px; 
+        }
+
+        #option a:hover {
+            color: white; 
+        }
+
+        #main {
+            margin-top: 90px; 
+            margin-left: auto;
+            margin-right: auto; 
+            width: 1100px; 
+            position: relative;
+            text-align: center;
+        }
+
+        #first {
+            width: 1100px; 
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #description {
+            font-size: 50px; 
+            color: white; 
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #foot {
+            background-color: lightgrey; 
+            text-align: center; 
+            height: 30px;
+            line-height: 30px;
+        }
+        
+
+        </style>
+    </head>
+
+    <body>
+        <div id="nav">
+            <a id="home" href="homepage.html"> TRAVELEASY </a>
+    
+            <div id="option">            
+                <ul>
+                    <li> <a href=""> CARS </a> </li>
+                    <li id="flight_opt"> <a href=""> FLIGHTS </a> </li>
+                    <li> <a href=""> HOTELS </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <img id="first" src="img/sunset.jpeg" alt="main_pic"> 
+
+            <p id ="description"> THE BEST TRAVEL OFFERS IN ONE PLACE. ON A STUDENT BUDGET. </p>
+        </div>
+
+        <div id="foot"> 
+            <p> TravelEasy &copy; 2023 </p>
+        </div>
+
+    </body>
+</html>
