@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TravelFly Home </title> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <style>   
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #nav {
+            position: fixed; 
+            background-color: #EBEBEB; 
+            margin-left: auto; 
+            margin-right: auto;
+            height: 75px; 
+            top: 0px; 
+            left: 0px; 
+            right: 0px; 
+            z-index: 1; 
+        }
+
+        #home {
+            width: 300px; 
+            margin-left: 20px; 
+            padding: 10px;
+            text-align: left; 
+            font-size: 30px; 
+            text-decoration: none; 
+            position: relative; 
+            top: 20px; 
+            color: black; 
+        }
+
+        #home:hover {
+            color: white; 
+        }
+
+        #option {
+            width: 300px; 
+            margin: 0px; 
+        }
+    
+        #option li {
+            width: 80px; 
+            margin: 10px; 
+        }
+
+        #flight_opt {
+            padding-left: 10px; 
+            padding-right: 25px; 
+        }
+
+        #option a {
+            color: black; 
+            text-decoration: none; 
+            font-size: 20px; 
+        }
+
+        #option ul {
+            display: flex; 
+            list-style: none; 
+            position: absolute; 
+            right: 50px;
+            bottom: 0px; 
+        }
+
+        #option a:hover {
+            color: white; 
+        }
+
+        #main {
+            margin-top: 90px; 
+            margin-left: auto;
+            margin-right: auto; 
+            width: 1200px; 
+            position: relative;
+            text-align: center;
+        }
+
+        #first {
+            width: 1200px; 
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #description {
+            font-size: 50px; 
+            color: white; 
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #both {
+            margin-top: 50px;
+            width: 1200px; 
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        #car, #fly {
+            width: 6000px; 
+        }
+
+        #car h2, #car h3, #fly h2, #fly h3 {
+            text-align: center; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #car_photo, #bag_photo {
+            width: 600px;
+        }
+
+        #car_link, #flight_link, #hotel_link {
+            text-align: center;
+            position: relative;
+            left: 250px;
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        #foot {
+            background-color:#EBEBEB; 
+            text-align: center; 
+            height: 30px;
+            line-height: 30px;
+        }
+
+        #hotel {
+            margin-top: 50px; 
+            margin-left: auto;
+            margin-right: auto; 
+            width: 1200px; 
+            position: relative;
+            text-align: center;
+        }
+
+        #hotel_pic {
+            width: 1200px; 
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #info {
+            font-size: 20px; 
+            color: white; 
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #hotel_link {
+            position: absolute; 
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: darkslateblue;
+        }
+        
+
+        </style>
+    </head>
+
+    <body>
+        <div id="nav">
+            <a id="home" href="homepage.html"> TRAVELEASY </a>
+    
+            <div id="option">            
+                <ul>
+                    <li> <a href=""> CARS </a> </li>
+                    <li id="flight_opt"> <a href=""> FLIGHTS </a> </li>
+                    <li> <a href=""> HOTELS </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <p> RESULTS </p>
+        </div>
+
+        <div id="table">
+            <p> RESULTS </p>
+              <table>
+                <tr>
+                    <th>Airline</th>
+                    <th>Flight Time</th>
+                    <th>Number of Stops</th>
+                    <th>Price</th>
+                    <th>Wifi</th>
+                    <th>Seats Available</th>
+                </tr>
+                <tr>
+                    <td><img id="smallpic" src="https://1000logos.net/wp-content/uploads/2017/06/United-Airlines-Logo.png" alt="united airlines"></td>
+                    <td>6h 20m</td>
+                    <td>Nonstop</td>
+                    <td>$400</td>
+                    <td><img id="smallpic" src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="wifi"></td>
+                    <td>3 Seats</td>
+                </tr>
+                <tr>
+                    <td><img id="smallpic" src="https://1000logos.net/wp-content/uploads/2017/06/United-Airlines-Logo.png" alt="united airlines"></td>
+                    <td>6h 25m</td>
+                    <td>Nonstop</td>
+                    <td>$350</td>
+                    <td><img id="smallpic" src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="wifi"></td>
+                    <td>2 Seats</td>
+                </tr>
+                <tr>
+                    <td><img id="smallpic" src="https://1000logos.net/wp-content/uploads/2019/08/southwest-airlines-logo.png" alt="southwest"></td>
+                    <td>6h 50m</td>
+                    <td>Nonstop</td>
+                    <td>$410</td>
+                    <td><img id="smallpic" src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="wifi"></td>
+                    <td>1 Seat</td>
+                </tr>
+                <tr>
+                    <td><img id="smallpic" src="https://1000logos.net/wp-content/uploads/2019/08/southwest-airlines-logo.png" alt="southwest"></td>
+                    <td>5h 58m</td>
+                    <td>Nonstop</td>
+                    <td>$420</td>
+                    <td><img id="smallpic" src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="wifi"></td>
+                    <td>2 Seats</td>
+                </tr>
+                <tr>
+                    <td><img id="smallpic" src="https://s202.q4cdn.com/521076508/files/doc_downloads/logos/JetBlue-Logo.jpg" alt="jetblue"></td>
+                    <td>5h 40m</td>
+                    <td>Nonstop</td>
+                    <td>$390</td>
+                    <td><img id="smallpic" src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="wifi"></td>
+                    <td>3 Seats</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="foot"> 
+            <p> TRAVELEASY &copy; 2023 </p>
+        </div>
+
+    </body>
+</html>
