@@ -82,7 +82,22 @@
         }
 
         #table {
+            width: 1000px;
             margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #table p {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px; 
         }
 
       
@@ -105,6 +120,35 @@
         margin-right: 10px;
         }
 
+        table th {
+            margin-left: 10px; 
+        }
+
+        #pic {
+            margin-top: 100px; 
+            margin-left: auto;
+            margin-right: auto; 
+            width: 500px; 
+            position: relative;
+            text-align: center;
+        }
+
+        #res_pic {
+            width: 500px; 
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #pic h2{
+            font-size: 25px; 
+            color: white; 
+            position: absolute; 
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         </style>
     </head>
 
@@ -114,23 +158,27 @@
     
             <div id="option">            
                 <ul>
-                    <li> <a href=""> CARS </a> </li>
-                    <li id="flight_opt"> <a href=""> FLIGHTS </a> </li>
-                    <li> <a href=""> HOTELS </a> </li>
+                    <li> <a href="search_form.html"> CARS </a> </li>
+                    <li id="flight_opt"> <a href="search_form.html"> FLIGHTS </a> </li>
+                    <li> <a href="search_form.html"> HOTELS </a> </li>
                 </ul>
             </div>
         </div>
 
+        <div id="pic">
+            <img id="res_pic" src="https://images.unsplash.com/photo-1433838552652-f9a46b332c40?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D" alt="results">
+            <h2> RESULTS </h2>
+        </div>
+
         <div id="table">
-            <p> RESULTS </p>
               <table>
                 <tr>
                     <th>Airline</th>
                     <th>Flight Time</th>
-                    <th>Number of Stops</th>
+                    <th>Stops</th>
                     <th>Price</th>
                     <th>Wifi</th>
-                    <th>Seats Available</th>
+                    <th>Seats </th>
                 </tr>
                 <tr>
                     <td><img class="logo" src="https://1000logos.net/wp-content/uploads/2017/06/United-Airlines-Logo.png" alt="united airlines"></td>
