@@ -44,13 +44,14 @@
         }
 
         #option {
-            width: 300px; 
+            width: 330px; 
             margin: 0px; 
         }
     
         #option li {
-            width: 80px; 
+            width: 90px; 
             margin: 10px; 
+            line-height:22px;
         }
 
         #option a {
@@ -71,9 +72,12 @@
             color: white; 
         }
 
-        #flight_opt {
-            padding-left: 10px; 
-            padding-right: 25px; 
+       /* #flight_opt {
+            padding-right: 35px; 
+        } */
+
+        #hotel_opt{
+            padding-left: 20px;
         }
 
         #main {
@@ -86,21 +90,21 @@
         }
 
         #first {
-            width: 1200px; 
-            height: 400px;
+            width: 1100px; 
+            height: 600px; 
             margin-left: auto;
             margin-right: auto;
             text-align: center;
         }
 
         #description {
-            font-size: 40px; 
+            font-size: 50px; 
             color: white; 
-            position: absolute; 
-            height: 10px;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            text-shadow: 1px 1px 5px black;
         }
 
         #foot {
@@ -154,7 +158,7 @@
         }
 
         #price {
-            width: 400px;
+            width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -163,7 +167,15 @@
             margin-left: auto;
             margin-right: auto;
             width: 600px;
-        
+            
+        }
+
+        #models {
+            padding-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+
         }
 
         .clearfloat {
@@ -171,9 +183,14 @@
 	    }
 
         #buttons {
+            padding-top: 25px;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+        }
+
+        #buttons button {
+            margin-left: 15px;
         }
 
         /* .picture {
@@ -200,9 +217,9 @@
     
             <div id="option">            
                 <ul>
-                    <li> <a href=""> CARS </a> </li>
-                    <li id="flight_opt"> <a href=""> FLIGHTS </a> </li>
-                    <li> <a href=""> HOTELS </a> </li>
+                    <li id="car_opt"> <a href="car_form.html"> CARS </a> </li>
+                    <li id="flight_opt"> <a href="search_form.html"> FLIGHTS </a> </li>
+                    <li id="hotel_opt"> <a href="search_form.html"> HOTELS </a> </li>
                 </ul>
             </div>
         </div>
@@ -210,9 +227,9 @@
 
         <!-- Header -->
         <div id="main">
-            <img id="first" src="img/nature.jpg" alt="main_pic"> 
+            <img id="first" src="img/car_main.jpeg" alt="main_pic"> 
 
-            <p id ="description"> WHERE DO YOU WANT TO GO? </p>
+            <p id ="description"> WHERE DO YOU WANT TO LOOK FOR CARS? </p>
         </div>
         <!-- End of Header  -->
 
@@ -225,7 +242,7 @@
             
             <div class="form-group row" id="location">
 				<div class="col-sm-8">
-					<input id="location_text" type="text" class="form-control" placeholder="I want to go too..." name="location">
+					<input id="location_text" type="text" class="form-control" placeholder="Enter City" name="location">
 				</div>
 			</div> <!-- .form-group -->
 
@@ -250,7 +267,7 @@
         <br>
 
         
-<p id="criteria"> DON'T KNOW WHERE YET? LET US HELP</p>
+<!-- <p id="criteria"> DON'T KNOW WHERE YET? LET US HELP</p> 
 
         <br>
 
@@ -263,12 +280,12 @@
                     <option value="Hotel">Hotel</option>
                 </select>
             </div>
-        </div> <!-- .form-group -->
+        </div> <!-- .form-group 
 
         <div class="form-group row">
-            <label class="col-sm-3 col-form-label text-sm-right input_group">On the Conitnent of </label>
+            <label class="col-sm-3 col-form-label text-sm-right input_group">On the continent of </label>
             <div class="col-sm-8">
-                <select name="contientn" class="form-control" id="continent">
+                <select name="continent" class="form-control" id="continent">
                     <option value="Africa">Africa</option>
                     <option value="Asia">Asia</option>
                     <option value="Europe">Europe</option>
@@ -278,21 +295,20 @@
 
                 </select>
             </div>
-        </div>
+        </div>  -->
 
         <br>
 
         <div class="form-group row" id="dates">
-            <label class="col-sm-3 col-form-label text-sm-right">I am travelling</label>
+            <label class="col-sm-3 col-form-label text-sm-right"> Starting Date: </label>
             <div class="col-sm-8">
                 <div class="row">
                     <div class="col">
                         <label class="form-check-label my-1">
-                            From: 
                             <input type="date" class="form-control mt-2" name="from">
                         </label>
                     </div> <!-- .col -->
-                    <div class="col">
+                   <!--<div class="col">
                         <label class="form-check-label my-1">
                             To:
                             <input type="date" class="form-control mt-2" name="to">
@@ -305,9 +321,16 @@
         <br>
 
         <div class="form-group row" id="price">
-            <label class="col-sm-3 col-form-label text-sm-right">Budget:</label>
+            <label class="col-sm-3 col-form-label text-sm-right"> Starting Budget:</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="price" placeholder="My budget is...">
+                <input type="input" class="form-control" name="price" placeholder="Search by starting price">
+            </div>
+        </div> <!-- .form-group -->
+
+        <div class="form-group row" id="models">
+            <label class="col-sm-3 col-form-label text-sm-right"> Car Model: </label>
+            <div class="col-sm-9">
+                <input type="input" class="form-control" name="models" placeholder="Search by model">
             </div>
         </div> <!-- .form-group -->
 
