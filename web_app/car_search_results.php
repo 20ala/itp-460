@@ -184,25 +184,29 @@
             margin-top: 100px; 
             margin-left: auto;
             margin-right: auto; 
-            width: 500px; 
+            width: 1100px; 
             position: relative;
             text-align: center;
         }
 
         #res_pic {
-            width: 500px; 
+            width: 1100px; 
             margin-left: auto;
             margin-right: auto;
             text-align: center;
         }
 
         #pic h2{
-            font-size: 25px; 
+            font-size: 60px; 
             color: white; 
             position: absolute; 
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        table {
+            border-spacing: 15px;
         }
 
         </style>
