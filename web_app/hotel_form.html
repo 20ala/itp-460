@@ -190,6 +190,49 @@
         #buttons button {
             margin-left: 15px;
         }
+
+        #help {
+            width: 1115px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: whitesmoke;
+            padding-bottom: 50px;
+        }
+
+        #help h2, h3 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #imgs {
+            width: 1100px;
+            display: flex;
+        }
+
+        #one, #two, #three {
+            background-color: blue;
+            width: 345px;
+            margin: 10px;
+            height: 200px;
+        }
+
+        .section {
+            width: 345px;
+            margin: 10px;
+            position: relative;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 30px; 
+            color: white; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            text-shadow: 1px 1px 5px black;
+        }
    
 
         </style>
@@ -270,8 +313,42 @@
 
         </form>
 
+        
         <br>
 
+        <br>
+
+        <div id="help">
+            <br> 
+
+            <h2> Need help searching? </h2>
+
+            <br> 
+
+            <h3> Highest rated hotels by students: </h3>
+
+            <br> 
+            
+            <div id="imgs">
+
+                <div class="section">
+                    <img id="one" src="img/hilton.jpeg" alt="hilton">
+                    <p class="name"> Hilton </p>
+                </div>
+
+                <div class="section">
+                    <img id="two" src="img/inter.jpeg" alt="intercontinental">
+                    <p class="name"> Intercontinental </p>
+                </div>
+
+                <div class="section">
+                    <img id="three" src="img/ritz.jpeg" alt="ritzcarlton">
+                    <p class="name"> Ritz Carlton </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
        
 
         <div id="foot"> 
